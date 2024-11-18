@@ -8,9 +8,8 @@ html, body {
   font-family: Arial, sans-serif;
   text-align: center;
   width: 100%;
-  gap: 20px;
+  gap: 4px;
 }
-
 
 .weather-display {
   margin-top: 1px;
@@ -62,6 +61,7 @@ html, body {
 }
 
 .weather-display img {
+  margin-top: -5px;
   width: 100px;
   height: 100px;
 }
@@ -73,7 +73,6 @@ html, body {
 .weather-details {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 25px;
   justify-content: center;
   gap: 10px;
   width: 100%;
@@ -121,10 +120,9 @@ input[type="text"] {
 
 .forecast {
   display: flex;
-  gap: 50px;
-  padding-top: 20px;
+  gap: 15px;
+  padding-top: 15px;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .forecast-day {
@@ -148,22 +146,29 @@ input[type="text"] {
 .forecast-day p {
   margin: 5px 0;
 }
-
 @media (max-width: 768px) {
   .detail-box {
     flex: 1 1 45%;
   }
 
   .forecast-day {
-    width: 80px;
+    width: 100px;
   }
 
   input[type="text"] {
-    width: 200px;
+    width: 60%;
   }
 
   button {
-    padding: 0.5em 1em;
+    width: 25%;
+    padding: 0.5em;
+    margin-top: 10px;
+  }
+
+  .forecast {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -177,12 +182,11 @@ input[type="text"] {
   }
 
   input[type="text"] {
-    width: 100%;
-    margin-right: 0;
+    width: 55%;
   }
 
   button {
-    width: 100%;
+    width: 25%;
     padding: 0.5em 0;
     margin-top: 10px;
   }
